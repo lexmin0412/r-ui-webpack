@@ -20,7 +20,7 @@ export default class componentName extends Component {
           {this.props.title}
         </div>
         <div className="content">
-          内容
+          {this.props.content}
         </div>
         <div className="buttons">
           按钮
