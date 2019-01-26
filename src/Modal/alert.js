@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import './rModal.css'
-import './test.less'
+import './alert.less'
 
 export default class componentName extends Component {
 
@@ -8,10 +8,8 @@ export default class componentName extends Component {
     super(props)
     this.state = {}
   }
-
-  componentDidMount(){
-
-  }
+    
+  componentDidMount(){}
   
   render() {
     return (

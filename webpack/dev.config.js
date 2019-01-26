@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/app.js',
+  entry: './examples/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
@@ -26,6 +26,10 @@ module.exports = {
           { loader: 'css-loader', options: { importLoaders: 1 } },
           'less-loader'
         ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: ['file-loader']
       }
     ]
   },

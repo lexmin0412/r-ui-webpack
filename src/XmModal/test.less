@@ -1,0 +1,48 @@
+.xm-confirm-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+
+  .xm-confirm-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #fff;
+    .xm-confirm-title {
+      font-size: 32px;
+      color: #1f2223;
+      padding: 40px 0 0 0;
+    }
+    .xm-confirm-message {
+      border-bottom: 1px solid #eff0f5;
+      padding: 10px 0 40px 0;
+      font-size: 28px;
+      color: #1f2223;
+    }
+    .xm-confirm-buttons {
+      display: flex;
+      align-items: center;
+      .xm-confirm-button {
+        flex: 1;
+        height: 88px;
+        line-height: 88px;
+        text-align: center;
+        font-size: 28px;
+        color: #1f2223;
+
+        &:first-child {
+          color: #999;
+          border-right: 1px solid #eff0f5;
+        }
+      }
+    }
+  }
+}

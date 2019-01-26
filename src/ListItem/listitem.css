@@ -1,0 +1,33 @@
+.item-box {
+  padding: 0 20px;
+  height: 88px;
+  line-height: 88px;
+}
+.item-box.bordered {
+  border-bottom: 1px solid #EBEBEB;
+}
+.item-box .left-title.large {
+  font-size: 32px;
+}
+.item-box .left-title.normal {
+  font-size: 28px;
+}
+.item-box .left-title .item-name {
+  color: #222;
+}
+.item-box .left-title .item-value {
+  margin-left: 26px;
+  color: #ff4a4a;
+  font-size: 24px;
+}
+.item-box .goto-icon {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #999;
+}
+.item-box .goto-icon img {
+  margin-left: 17px;
+  width: 32px;
+  height: 32px;
+}

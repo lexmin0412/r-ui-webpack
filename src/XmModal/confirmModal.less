@@ -1,0 +1,68 @@
+.xm-confirm-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+
+  .xm-confirm-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    width: 70%;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #fff;
+
+    &.open-animate {
+      animation: open 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    @keyframes open {
+      from {
+        transform: translate(-50%,-50%) scale(0)
+      }
+      to {
+        transform: translate(-50%,-50%) scale(1)
+      }
+    }
+
+    .messages {
+      border-bottom: 1px solid #eff0f5;
+      padding: 48px 24px;
+
+      .message-title {
+        font-size: 32px;
+        color: #1f2223;
+      }
+      .message-content {
+        margin-top: 20px;
+        font-size: 28px;
+        color: #1f2223;
+      }
+    }
+    .xm-confirm-buttons {
+      display: flex;
+      align-items: center;
+
+      .xm-confirm-button {
+        flex: 1;
+        height: 88px;
+        line-height: 88px;
+        text-align: center;
+        font-size: 28px;
+        color: #1f2223;
+
+        &:first-child {
+          color: #999;
+          border-right: 1px solid #eff0f5;
+        }
+      }
+    }
+  }
+}
