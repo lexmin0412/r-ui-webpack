@@ -1,6 +1,6 @@
 {
   "name": "rea-ui-web",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "a react components library build with webpack",
   "main": "dist/bundle.js",
   "files": [
